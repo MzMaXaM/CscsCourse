@@ -1,11 +1,15 @@
-import React from 'react';
-import {View, Text} from 'react-native'
+import * as React from 'react';
+import { View, Text } from 'react-native';
 
 
-export default function MockTest() {
+function MockTest() {
     return (
-        <View>
-            <Text>Mock Test</Text>
-        </View>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+        <Text>Mock Test</Text>
+        
+      </View>
     );
-}
+  }
+
+  
+export default MockTest;
