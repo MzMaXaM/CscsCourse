@@ -7,7 +7,7 @@ export default function Question() {
   return (
     <View style={styles.container}>
       <Image style={styles.pic} source={require('../assets/pexels-anamul-rezwan-1216589.jpg')} />
-      <Text style={styles.paragraph}>      </Text>
+      <Text style={styles.paragraph}>  Test    </Text>
       <Text style={styles.coment}>
        Choose one answer
       </Text>
