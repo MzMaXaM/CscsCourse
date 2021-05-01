@@ -1,40 +1,47 @@
 import React, { useState } from 'react';
-import { Text, View, StyleSheet, Image, Button, Alert } from 'react-native';
+import { Text, View, StyleSheet, Image, Button, TouchableOpacity } from 'react-native';
 import questions from './Database'
-const test = questions
-const n = 2
+
+const qst = questions
+let rsp = []
 
 const Card = () => {
 const [i, seti] = useState(0);
 
   return (
     <View style={styles.container}>
-      <Image style={styles.pic} source={test[i].pic} />
-      <Text style={styles.question}>{test[i].question}</Text>
+      <Image style={styles.pic} source={qst[i].pic} />
+      <Text style={styles.question}>{qst[i].question}</Text>
       <Text style={styles.coment}>Choose one answer</Text>
-      <View style={styles.questionsContainer}>
-      <View style={styles.radioOption}>
-        <input type="radio"  name="option" />
-        <Text>{test[i].a} </Text>
-      </View>
-      <View style={styles.radioOption}>
-        <input type="radio" value="yes" name="option" />
-        <Text>{test[i].b} </Text>
-      </View>
-      <View style={styles.radioOption}>
-        <input type="radio"  name="option" />
-        <Text>{test[i].c} </Text>
-      </View>
-      <View style={styles.radioOption}>
-        <input type="radio"  name="option" />
-        <Text>{test[i].d} </Text>
-      </View>
-      </View>
+      {/* <View style={styles.questionsContainer}>
+        <TouchableOpacity onPress={() => this.handleChange} >
+          <View style={styles.radioOption}>
+            <input type="radio"  name="option" />
+            <Text>{qst[i].a} </Text>
+          </View></TouchableOpacity>  
+        <TouchableOpacity>
+          <View style={styles.radioOption}>
+            <input type="radio" value="yes" name="option" />
+            <Text>{qst[i].b} </Text>
+          </View></TouchableOpacity>
+        <TouchableOpacity>
+          <View style={styles.radioOption}>
+            <input type="radio"  name="option" />
+            <Text>{qst[i].c} </Text>
+          </View></TouchableOpacity>
+        <TouchableOpacity>
+          <View style={styles.radioOption}>
+            <input type="radio"  name="option" />
+            <Text>{qst[i].d} </Text>
+          </View></TouchableOpacity>
+      </View> */}
       <View style={styles.buttonPlace}>
       <Button 
         style={styles.button}
         title="Submit"
-        onPress={() => seti(i + 1)}/>
+        onPress={() => (seti(i + 1),
+        rsp.push(1)
+        )}/>
       </View>
       <View style={styles.logBox}>
         <Text>clicked {i} times </Text>

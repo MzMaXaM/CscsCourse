@@ -6,6 +6,7 @@ const questions = {
         c: 'To look after your own health and safety',
         d: 'To write your own risk assessments',
         ca: 'd',
+        ba: ['a','c','b'],
         pic: require('../assets/pexels-anamul-rezwan-1216589.jpg')
     },
     1: {
@@ -15,6 +16,7 @@ const questions = {
         c: 'The site working hours',
         d: 'Where the first-aid box is kept',
         ca: 'b',
+        ba: ['a','c','d'],
         pic: require('../assets/pexels-anamul-rezwan-1216589.jpg')
     },
     2: {
@@ -24,6 +26,7 @@ const questions = {
         c: 'The likelihood that something might happen',
         d: 'The site accident rate',
         ca: 'b',
+        ba: ['a','c','d'],
         pic: require('../assets/pexels-pixabay-159306.jpg')
     }
 }
