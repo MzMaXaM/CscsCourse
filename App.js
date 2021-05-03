@@ -13,8 +13,8 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Test" component={MockTest} />
-        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Construction Scheme Mock Test" component={HomeScreen} />
+        <Stack.Screen name="Test on..." component={MockTest} />
       </Stack.Navigator>
     </NavigationContainer>
   );
