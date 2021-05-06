@@ -7,7 +7,8 @@ const questions = {
         d: 'To write your own risk assessments',
         ca: 'd',
         ba: ['a','c','b'],
-        pic: require('../assets/pexels-anamul-rezwan-1216589.jpg')
+        pic: require('../assets/pexels-anamul-rezwan-1216589.jpg'),
+        picSource: 'pexels-anamul-rezwan-1216589'
     },
     1: {
         question: 'What does a risk assessment identify?',
@@ -17,7 +18,8 @@ const questions = {
         d: 'Where the first-aid box is kept',
         ca: 'b',
         ba: ['a','c','d'],
-        pic: require('../assets/pexels-anamul-rezwan-1216589.jpg')
+        pic: require('../assets/pexels-anamul-rezwan-1216589.jpg'),
+        picSource: 'pexels-anamul-rezwan-1216589'
     },
     2: {
         question: 'What does the word "Hazard" mean',
@@ -27,7 +29,8 @@ const questions = {
         d: 'The site accident rate',
         ca: 'b',
         ba: ['a','c','d'],
-        pic: require('../assets/pexels-pixabay-159306.jpg')
+        pic: require('../assets/pexels-pixabay-159306.jpg'),
+        picSource: 'pexels-pixabay-159306'
     },
     3: {
         question: 'What is the main objective of carrying out an accident investigation?',
@@ -37,7 +40,8 @@ const questions = {
         d: 'To record what injuries were sustained',
         ca: 'a',
         ba: ['b','c','d'],
-        pic: require('../assets/pexels-cottonbro-4553277.jpg')
+        pic: require('../assets/pexels-cottonbro-4553277.jpg'),
+        picSource: 'pexels-cottonbro-4553277'
     },
     4: {
         question: 'What should you do if you have witnessed a serious accident on your site?',
@@ -47,7 +51,8 @@ const questions = {
         d: 'Tell your supervisor that you saw what happened',
         ca: 'd',
         ba: ['a','c','b'],
-        pic: require('../assets/pexels-cottonbro-4553277.jpg')
+        pic: require('../assets/pexels-cottonbro-4553277.jpg'),
+        picSource: 'pexels-cottonbro-4553277'
     },
     5: {
         question: 'If someone burns their hand, what is the best thing you can do?',
@@ -57,7 +62,8 @@ const questions = {
         d: 'Wrap your handkerchief around the burn',
         ca: 'a',
         ba: ['b','c','b'],
-        pic: require('../assets/pexels-pixabay-280076.jpg')
+        pic: require('../assets/pexels-pixabay-280076.jpg'),
+        picSource: 'pexels-pixabay-280076'
     },
     6: {
         question: 'When should you apply skin barrier cream?',
@@ -67,7 +73,8 @@ const questions = {
         d: 'When you finish work',
         ca: 'b',
         ba: ['a','c','b'],
-        pic: require('../assets/pexels-alexandr-podvalny-319930.jpg')
+        pic: require('../assets/pexels-alexandr-podvalny-319930.jpg'),
+        picSource: 'pexels-alexandr-podvalny-319930'
     },
     7: {
         question: 'You need to use a grinder, cut-off saw, cartridge tool or nail gun. What type of eye protection will you need?',
@@ -77,7 +84,8 @@ const questions = {
         d: 'Welding goggles',
         ca: 'a',
         ba: ['b','c','d'],
-        pic: require('../assets/pexels-pixabay-159306.jpg')
+        pic: require('../assets/pexels-pixabay-159306.jpg'),
+        picSource: 'pexels-pixabay-159306'
     },
     8: {
         question: 'What will safety footwear with a protective mid-sole protect you from?',
@@ -87,7 +95,8 @@ const questions = {
         d: 'Twisting your ankle',
         ca: 'b',
         ba: ['a','c','d'],
-        pic: require('../assets/pexels-pixabay-159306.jpg')
+        pic: require('../assets/pexels-pixabay-159306.jpg'),
+        picSource: 'pexels-pixabay-159306'
     }
 }
 
