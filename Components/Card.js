@@ -1,5 +1,6 @@
+import 'react-native-gesture-handler';
 import React, { useState } from 'react';
-import { View, Image, TouchableOpacity, Button, Alert } from 'react-native';
+import { View, Image, TouchableOpacity, Button } from 'react-native';
 import { RadioButton, Text } from 'react-native-paper';
 import qst from './Database';
 import gS from './Styles';
@@ -11,15 +12,9 @@ const Card = ({ navigation }) => {
     const [i, seti] = useState(0);
     const [corectAnswer, setcorectAnswer] = useState(0);
 
-    const onPress = () => {
-        if (i == nOfQst) {
-            navigation.navigate('Results');
-        }
-        else {
-            if (value===qst[i].ca) {setcorectAnswer(corectAnswer + 1)};
-            seti(i + 1);
-        }
-    };
+    const handler = () => {
+        navigation.navigate('Results')
+    }
     
   return (
     <View style={gS.container}>
@@ -55,7 +50,16 @@ const Card = ({ navigation }) => {
                     </View>
                 </TouchableOpacity>
             </RadioButton.Group>
-      <Button title={"Submit"} onPress={onPress} />
+      {/* <Button title={"Submit"} onPress={onPress} /> */}
+      <Button
+          title="Submit"
+          onPress={() =>{
+              if (i === (nOfQst-1)) {
+                  handler()}
+              if (value===qst[i].ca) {setcorectAnswer(corectAnswer + 1)};
+                seti(i + 1);
+          }}
+        />
             {/* <Button icon="check-circle" mode="contained" onPress={onPress} >
             Submit
             </Button> */}
