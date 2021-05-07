@@ -50,7 +50,7 @@ const Card = ({ navigation }) => {
                     </View>
                 </TouchableOpacity>
             </RadioButton.Group>
-      {/* <Button title={"Submit"} onPress={onPress} /> */}
+            
       <Button
           title="Submit"
           onPress={() =>{
@@ -60,9 +60,6 @@ const Card = ({ navigation }) => {
                 seti(i + 1);
           }}
         />
-            {/* <Button icon="check-circle" mode="contained" onPress={onPress} >
-            Submit
-            </Button> */}
             <Text style={gS.coment}>You've got {corectAnswer} correct answers!</Text>
         </View>
     </View>
