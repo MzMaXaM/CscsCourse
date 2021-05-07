@@ -10,12 +10,11 @@ const globalStyleSheet = StyleSheet.create({
       justifyContent: 'center',
       shadowColor: "#000",
       shadowOffset: {
-        width: 0,
+        width: 4,
         height: 4,
       },
       shadowOpacity: 0.30,
       shadowRadius: 4.65,
-
       elevation: 8,
     },
     child:{
@@ -33,12 +32,11 @@ const globalStyleSheet = StyleSheet.create({
       borderRadius: 5,
       shadowColor: "#000",
       shadowOffset: {
-        width: 0,
+        width: 4,
         height: 4,
       },
       shadowOpacity: 0.30,
       shadowRadius: 4.65,
-
       elevation: 8,
     },
     pic: {
@@ -61,6 +59,12 @@ const globalStyleSheet = StyleSheet.create({
     radioText:{
       marginVertical: 5,
       fontSize: 13,
+    },
+    input:{
+      borderStyle: 'solid' ,
+      borderWidth: 2,
+      borderRadius: 5,
+      textAlign: 'center'
     }
   });
 
