@@ -14,7 +14,7 @@ const globalStyleSheet = StyleSheet.create({
         height: 4,
       },
       shadowOpacity: 0.30,
-      shadowRadius: 4.65,
+      shadowRadius: 5,
       elevation: 8,
     },
     child:{
@@ -36,7 +36,7 @@ const globalStyleSheet = StyleSheet.create({
         height: 4,
       },
       shadowOpacity: 0.30,
-      shadowRadius: 4.65,
+      shadowRadius: 5,
       elevation: 8,
     },
     pic: {
