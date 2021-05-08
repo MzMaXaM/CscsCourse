@@ -10,13 +10,14 @@ const MockTest = ({ route, navigation }) => {
     const [i, seti] = useState(0);
     const [corectAnswer, setcorectAnswer] = useState(0);
     const {numberOfQuestions} = route.params;
-    let nOfQst = numberOfQuestions;
-
+    
     const handler = () => {
         navigation.navigate('Results', {
-          NumOfCorrectAnswers: corectAnswer,
-          totalQuestions: numberOfQuestions
+            NumOfCorrectAnswers: corectAnswer,
+            totalQuestions: numberOfQuestions
         })};
+    let nOfQst = numberOfQuestions;
+
     if (i === nOfQst){
       handler()
     };
@@ -55,15 +56,17 @@ const MockTest = ({ route, navigation }) => {
                     </View>
                 </TouchableOpacity>
             </RadioButton.Group>
-            <Button
-                icon="check-circle"
-                mode="contained"
-                onPress={() =>{
-                if (value === qst[i].ca) {setcorectAnswer(corectAnswer + 1)};
-                    seti(i + 1);
-                }}> 
-                    Press me
-            </Button>
+            <View style={gS.buttonContainer}>
+                <Button
+                    icon="check-circle"
+                    mode="contained"
+                    onPress={() =>{
+                    if (value === qst[i].ca) {setcorectAnswer(corectAnswer + 1)};
+                        seti(i + 1);
+                    }}> 
+                        Press me
+                </Button>
+            </View>
           <Text style={gS.coment}>You've got {corectAnswer} correct answers!</Text>
         </View>
     </View>

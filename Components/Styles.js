@@ -4,6 +4,7 @@ const globalStyleSheet = StyleSheet.create({
     container: {
       height: '95%',
       width: '90%',
+      left: '5%',
       backgroundColor: 'white',
       borderRadius: 10,
       alignItems: 'center',
@@ -22,7 +23,7 @@ const globalStyleSheet = StyleSheet.create({
       width: '95%',
       marginTop: '5%',
       alignItems: 'center',
-      justifyContent: 'space-between',
+      justifyContent: 'space-around',
     },
     picContainer:{
       height: '50%',
@@ -65,6 +66,16 @@ const globalStyleSheet = StyleSheet.create({
       borderWidth: 2,
       borderRadius: 5,
       textAlign: 'center'
+    },
+    buttonContainer:{
+      shadowColor: "#000",
+      shadowOffset: {
+        width: 4,
+        height: 4,
+      },
+      shadowOpacity: 0.30,
+      shadowRadius: 5,
+      elevation: 8,
     }
   });
 

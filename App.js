@@ -11,9 +11,21 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="HomeScreen" component={HomeScreen} />
-        <Stack.Screen name="MockTest" component={MockTest} />
-        <Stack.Screen name="Results" component={Results} />
+        <Stack.Screen 
+          name="HomeScreen" 
+          component={HomeScreen}
+          options={{ title: 'CsCs Mock Test' }}
+         />
+        <Stack.Screen 
+          name="MockTest" 
+          component={MockTest}
+          options={{ title: 'Mock Test Screen' }}
+         />
+        <Stack.Screen 
+          name="Results" 
+          component={Results}
+          options={{ title: 'Results Screen' }}
+         />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -9,8 +9,8 @@ function ResultsScreen({ route, navigation }) {
     return (
       <View style={gS.container}>
         <View style={gS.picContainer}>
-          <Image style={gS.pic} source={require('../assets/pexels-skitterphoto-38070.jpg')} />
-          <Text style={gS.coment}>Source: pexels-skitterphoto-38070</Text>
+          <Image style={gS.pic} source={require('../assets/pexels-baluc-photography-6598294.jpg')} />
+          <Text style={gS.coment}>Source: pexels-baluc-photography-6598294</Text>
         </View>
         <View style={gS.child}>
           <View>
@@ -19,12 +19,15 @@ function ResultsScreen({ route, navigation }) {
           </View>
           <View>
             <Text style={gS.coment}>Push to go to home screen</Text>
-            <Button 
-              icon="test-tube"
-              mode="contained"
-              onPress={() => navigation.navigate('HomeScreen', { name: 'HomeScreen' })}>
-                Home Screen
-            </Button>
+            
+            <View style={gS.buttonContainer}>
+              <Button 
+                icon="test-tube"
+                mode="contained"
+                onPress={() => navigation.navigate('HomeScreen', { name: 'HomeScreen' })}>
+                  Home Screen
+              </Button>
+            </View>
           </View>
         </View>
       </View>
