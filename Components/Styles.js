@@ -2,8 +2,10 @@ import {StyleSheet } from 'react-native';
 
 const globalStyleSheet = StyleSheet.create({
     container: {
-      height: '95%',
+      height: '90%',
       width: '90%',
+      left: '5%',
+      top: '6%',
       backgroundColor: 'white',
       borderRadius: 10,
       alignItems: 'center',
@@ -22,7 +24,7 @@ const globalStyleSheet = StyleSheet.create({
       width: '95%',
       marginTop: '5%',
       alignItems: 'center',
-      justifyContent: 'space-between',
+      justifyContent: 'space-around',
     },
     picContainer:{
       height: '50%',
@@ -45,9 +47,23 @@ const globalStyleSheet = StyleSheet.create({
       borderRadius: 5,
     },
     question: {
+      width: '90%',
       marginTop: 10,
       fontSize: 14,
       fontWeight: 'bold',
+      textAlign: 'center',
+    },
+    childResult:{
+      width: '100%',
+      alignItems: 'center',
+    },
+    result: {
+      width: '100%',
+      fontSize: 15,
+      fontWeight: 'bold',
+      textAlign: 'center',
+      marginBottom: 10,
+      color: 'indigo'
     },
     coment:{
       fontSize: 10,
@@ -59,12 +75,24 @@ const globalStyleSheet = StyleSheet.create({
     radioText:{
       marginVertical: 5,
       fontSize: 13,
+      flexShrink: 1,
+      width: '93%'
     },
     input:{
       borderStyle: 'solid' ,
       borderWidth: 2,
       borderRadius: 5,
       textAlign: 'center'
+    },
+    buttonContainer:{
+      shadowColor: "#000",
+      shadowOffset: {
+        width: 4,
+        height: 4,
+      },
+      shadowOpacity: 0.30,
+      shadowRadius: 5,
+      elevation: 8,
     }
   });
 

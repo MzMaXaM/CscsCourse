@@ -6,18 +6,18 @@ import qst from './Database';
 import gS from './Styles';
 
 const MockTest = ({ route, navigation }) => {
+    const {numberOfQuestions} = route.params;
+    let n = parseInt(numberOfQuestions);
     const [value, setValue] = useState('a');
     const [i, seti] = useState(0);
     const [corectAnswer, setcorectAnswer] = useState(0);
-    const {numberOfQuestions} = route.params;
-    let nOfQst = numberOfQuestions;
-
+    
     const handler = () => {
         navigation.navigate('Results', {
-          NumOfCorrectAnswers: corectAnswer,
-          totalQuestions: numberOfQuestions
+            numOfCorrectAnswers: corectAnswer,
+            totalQuestions: numberOfQuestions,
         })};
-    if (i === nOfQst){
+    if (i === n){
       handler()
     };
   return (
@@ -55,18 +55,19 @@ const MockTest = ({ route, navigation }) => {
                     </View>
                 </TouchableOpacity>
             </RadioButton.Group>
-            <Button
-                icon="check-circle"
-                mode="contained"
-                onPress={() =>{
-                if (value === qst[i].ca) {setcorectAnswer(corectAnswer + 1)};
+            <View style={gS.buttonContainer}>
+                <Text style={gS.coment}>You've got {corectAnswer} correct answers!</Text>
+                <Button
+                    icon="check-circle"
+                    mode="contained"
+                    onPress={() =>{
+                    if (value === qst[i].ca) {setcorectAnswer(corectAnswer + 1)};
                     seti(i + 1);
                 }}> 
                     Press me
-            </Button>
-          <Text style={gS.coment}>You've got {corectAnswer} correct answers!</Text>
+                </Button>
+            </View>
         </View>
     </View>
   )};
-
 export default MockTest;

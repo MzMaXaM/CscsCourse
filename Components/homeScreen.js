@@ -5,7 +5,7 @@ import { Text, Button } from 'react-native-paper';
 import gS from './Styles';
 
 function HomeScreen({ navigation }) {
-  const [number, setNumber] = useState(3);
+  const [number, setNumber] = useState(5);
     return (
       <View style={gS.container}>
         <View style={gS.picContainer}>
@@ -15,26 +15,30 @@ function HomeScreen({ navigation }) {
         <View style={gS.child}>
           <View>
             <Text>While we are in working process</Text>
-            <Text>the Database contain only 9 questions</Text>
-            <Text>Choose a number from 1 to 9 please </Text>
+            <Text>the Database contain only 23 questions</Text>
+            <Text>Choose a number from 1 to 23 please </Text>
             <TextInput
               style={gS.input}
-              onChangeText={setNumber}
-              value={number}
+              onChangeText={number => setNumber(number)}
+              defaultValue={number}
               keyboardType="numeric"
-              maxLength={1}
+              maxLength={2}
+              placeholder='5'
             />
           </View>
           <View>
             <Text style={gS.coment}>Push to start</Text>
-            <Button 
-              icon="test-tube" 
-              mode="contained" 
-              onPress={() => navigation.navigate('MockTest', { 
-              numberOfQuestions: number 
-              })}>
-              Start Test
-            </Button>
+            <View style={gS.buttonContainer}>
+              <Button 
+                icon="test-tube"
+                mode="contained"
+                onPress={() =>{
+                  navigation.navigate('MockTest', {
+                    numberOfQuestions: number
+                })}}>
+                Start Test
+              </Button>
+            </View>
           </View>
         </View>
       </View>
