@@ -2,9 +2,10 @@ import {StyleSheet } from 'react-native';
 
 const globalStyleSheet = StyleSheet.create({
     container: {
-      height: '95%',
+      height: '90%',
       width: '90%',
       left: '5%',
+      top: '6%',
       backgroundColor: 'white',
       borderRadius: 10,
       alignItems: 'center',
@@ -46,9 +47,23 @@ const globalStyleSheet = StyleSheet.create({
       borderRadius: 5,
     },
     question: {
+      width: '90%',
       marginTop: 10,
       fontSize: 14,
       fontWeight: 'bold',
+      textAlign: 'center',
+    },
+    childResult:{
+      width: '100%',
+      alignItems: 'center',
+    },
+    result: {
+      width: '100%',
+      fontSize: 15,
+      fontWeight: 'bold',
+      textAlign: 'center',
+      marginBottom: 10,
+      color: 'indigo'
     },
     coment:{
       fontSize: 10,
@@ -60,6 +75,8 @@ const globalStyleSheet = StyleSheet.create({
     radioText:{
       marginVertical: 5,
       fontSize: 13,
+      flexShrink: 1,
+      width: '93%'
     },
     input:{
       borderStyle: 'solid' ,

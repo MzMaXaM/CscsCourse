@@ -10,21 +10,23 @@ const Stack = createStackNavigator();
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: 'false',
+          headerTransparent: 'true'
+        }}
+      >
         <Stack.Screen 
           name="HomeScreen" 
           component={HomeScreen}
-          options={{ title: 'CsCs Mock Test' }}
          />
         <Stack.Screen 
           name="MockTest" 
           component={MockTest}
-          options={{ title: 'Mock Test Screen' }}
          />
         <Stack.Screen 
           name="Results" 
           component={Results}
-          options={{ title: 'Results Screen' }}
          />
       </Stack.Navigator>
     </NavigationContainer>

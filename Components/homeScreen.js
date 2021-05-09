@@ -19,21 +19,23 @@ function HomeScreen({ navigation }) {
             <Text>Choose a number from 1 to 23 please </Text>
             <TextInput
               style={gS.input}
-              onChangeText={setNumber}
-              value={number}
+              onChangeText={number => setNumber(number)}
+              defaultValue={number}
               keyboardType="numeric"
               maxLength={2}
+              placeholder='5'
             />
           </View>
           <View>
             <Text style={gS.coment}>Push to start</Text>
             <View style={gS.buttonContainer}>
               <Button 
-                icon="test-tube" 
-                mode="contained" 
-                onPress={() => navigation.navigate('MockTest', { 
-                numberOfQuestions: number 
-                })}>
+                icon="test-tube"
+                mode="contained"
+                onPress={() =>{
+                  navigation.navigate('MockTest', {
+                    numberOfQuestions: number
+                })}}>
                 Start Test
               </Button>
             </View>
